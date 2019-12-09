@@ -1,11 +1,11 @@
 # Site settings
-author: Joanna E K
-title: 
+author: Joanna Kalema 
+title: Joanna Chronicles
 header-img: img/home-bg.png
 email: kalemajoanna@gmail.com
-copyright_name: Joanna E K
+copyright_name: Joanna Kalema 
 description: > # this means to ignore newlines until "baseurl:"
-  
+  The journey of Joanna's coding journey in words not code
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  jokale
