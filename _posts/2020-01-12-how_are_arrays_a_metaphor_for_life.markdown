@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "How are arrays a metaphor for life?"
-date:       2020-01-12 18:32:56 +0000
+date:       2020-01-12 13:32:57 -0500
 permalink:  how_are_arrays_a_metaphor_for_life
 ---
 
