@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "One month left to go! "
-date:       2020-04-19 12:02:20 +0000
+date:       2020-04-19 08:02:21 -0400
 permalink:  one_month_left_to_go
 ---
 
