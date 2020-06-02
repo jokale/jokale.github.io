@@ -63,18 +63,17 @@ We access the data from our store with passing mapStateToProps as the first argu
 The render function then returns all html elements within it and renders it onto the page.
 
 
-Then our component mounts which means that the HTML within my container and the HTML within my Threaddlist component has been rendered onto the DOM. They can be accessed if necessary and also allows me to manipulate the DOM and fetch any data needed. 
+Then our componentDidMount function mounts which means that the HTML within my container and the HTML within my Threaddlist component has been rendered onto the DOM. They can be accessed if necessary and also allows me to manipulate the DOM and fetch any data needed. 
 
 
-```
-    componentDidMount(){
-        this.props.fetchThreadds()
+```  componentDidMount(){
+ this.props.fetchThreadds()
 				}
-		```
+	```
         
-        
+         
 
-Whereby this.props is giving us access to global state and fetch threads is the action creator allowing us to fetch all the threads from our backend( where I am storing all the data)
+Whereby ` this.props` is giving us access to global state and `fetchThreadds()` is the action creator allowing us to fetch all the threads from our backend( where I am storing all the data)
 
 
 
@@ -100,7 +99,7 @@ export function fetchThreadds() {
 
 
 Whereby a function is returned (due to Redux Thunk) from our API call with a payload of JSON data holding all the threads. Due to Redux Thunk and our connect function in which we are passing in 
-fetchhThreadd  as a second arguement we are able to dispatch that function and action to our reducer below. 
+fetchhThreadd  as a second arguement we are able to dispatch that function and action to our reducer as well as the store. 
 
 ```switch(action.type) {
     case 'FETCH_THREADDS':
