@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Redux Flow Joanna style "
+title:      "React/Redux Flow Joanna style "
 date:       2020-06-02 14:18:30 -0400
 permalink:  redux_flow_joanna_style
 ---
@@ -96,7 +96,6 @@ export function fetchThreadds() {
     }
     
 }
-
 ```
 
 
@@ -105,11 +104,10 @@ fetchhThreadd  as a second arguement.
 
 From there, we can dispatch that function and action to our reducer below. 
 
-```
-    switch(action.type) {
+```switch(action.type) {
     case 'FETCH_THREADDS':
-       return {threadds: action.payload}   
-```
+       return {threadds: action.payload} ```
+			 
 
 Our reducer matches our type which is ``` 'FETCH_THREADDS' ``` with the relevant case statement which is also ```'FETCH_THREADDS' ``` and our reducers allows us to return our payload of data and allow that data to be saved in the store as threads. 
 
