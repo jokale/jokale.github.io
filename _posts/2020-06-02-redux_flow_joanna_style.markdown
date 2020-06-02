@@ -51,19 +51,19 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, {fetchThreadds})(ThreaddsContainer);
+export default connect(mapStateToProps, {fetchThreadds})(ThreaddsContainer);```
 
-```
+We access the data from our store with passing mapStateToProps as the first argument into our connect() function. This just allows us to have access to grab state from the store. But for that to happen we must create a mapStateToProps function which is allowing us to grab the specific state from our store that allows us to pass our component's props. This function is returning the data we need which in this case is the threadds. Then I am able to pass my Threadlist component the global state as props.
 
-We access the data from our store with passing mapStateToProps as the first argument into our connect() function. This just allows us to have access to grab state from the store. But for that to happen we must create a mapStateToProps function which is allowing us to grab the specific state from our store that allows us to pass our component's props. This function is returning the data we need which in this case is the threadds.
-
-We then render the specific global state in our specific components as props
 
 ```
 <Threaddlist threadds={this.props.threadds}/> 
 ```
 
-Then our component mounts which means that the HTML within my container and the HTML within my Threaddlist component has been rendered onto the DOM. The can be accessed if necessary and also allows to manipulate the DOM and fetch any data needed. 
+The render function then returns all html elements within it and renders it onto the page.
+
+
+Then our component mounts which means that the HTML within my container and the HTML within my Threaddlist component has been rendered onto the DOM. They can be accessed if necessary and also allows me to manipulate the DOM and fetch any data needed. 
 
 
 ```
@@ -100,9 +100,7 @@ export function fetchThreadds() {
 
 
 Whereby a function is returned (due to Redux Thunk) from our API call with a payload of JSON data holding all the threads. Due to Redux Thunk and our connect function in which we are passing in 
-fetchhThreadd  as a second arguement. 
-
-From there, we can dispatch that function and action to our reducer below. 
+fetchhThreadd  as a second arguement we are able to dispatch that function and action to our reducer below. 
 
 ```switch(action.type) {
     case 'FETCH_THREADDS':
@@ -111,7 +109,7 @@ From there, we can dispatch that function and action to our reducer below.
 
 Our reducer matches our type which is ``` 'FETCH_THREADDS' ``` with the relevant case statement which is also ```'FETCH_THREADDS' ``` and our reducers allows us to return our payload of data and allow that data to be saved in the store as threads. 
 
-The process repeats because the first time around when we were trying to get access to the store there was nothing in our store this was just allowing us to create a foundation so when we have access to the data it renders pretty quickly. 
+The process repeats because the first time around when we were trying to get access to the store there was nothing in our store this was just allowing us to create a foundation so when we have access to the data it renders pretty quickly (However the component also mounts whenever there is a change in the store)
 
 So again we able to get a specific state from our store and allow it to pass the props to the relevant components.
 
