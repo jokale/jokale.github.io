@@ -57,7 +57,8 @@ export default connect(mapStateToProps, {fetchThreadds})(ThreaddsContainer);
 
 We access the data from our store with passing mapStateToProps as the first argument into our connect() function. This just allows us to have access to grab state from the store. But for that to happen we must create a mapStateToProps function which is allowing us to grab the specific state from our store that allows us to pass our component's props. This function is returning the data we need which in this case is the threadds.
 
-We then render the specific global state in our specific components as props 
+We then render the specific global state in our specific components as props
+
 ```
 <Threaddlist threadds={this.props.threadds}/> 
 ```
@@ -70,8 +71,10 @@ Then our component mounts which means that the HTML within my container and the 
     componentDidMount(){
         this.props.fetchThreadds()
     }
+		
+		```
         
-        ```
+        
 
 Whereby this.props is giving us access to global state and fetch threads is the action creator allowing us to fetch all the threads from our backend( where I am storing all the data)
 
