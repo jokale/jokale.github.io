@@ -67,7 +67,6 @@ Then our component mounts which means that the HTML within my container and the 
 
 
 ```
- 
     componentDidMount(){
         this.props.fetchThreadds()
     }
@@ -97,7 +96,9 @@ export function fetchThreadds() {
     }
     
 }
+
 ```
+
 
 Whereby a function is returned (due to Redux Thunk) from our API call with a payload of JSON data holding all the threads. Due to Redux Thunk, we can dispatch that function to our reducer below. 
 
