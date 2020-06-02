@@ -69,8 +69,7 @@ Then our component mounts which means that the HTML within my container and the 
 ```
     componentDidMount(){
         this.props.fetchThreadds()
-    }
-		
+				}
 		```
         
         
@@ -78,8 +77,9 @@ Then our component mounts which means that the HTML within my container and the 
 Whereby this.props is giving us access to global state and fetch threads is the action creator allowing us to fetch all the threads from our backend( where I am storing all the data)
 
 
+
 ```
-\\fetchThreadds.js 
+fetchThreadds.js 
 
 export function fetchThreadds() {
 {
