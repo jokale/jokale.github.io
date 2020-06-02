@@ -100,7 +100,10 @@ export function fetchThreadds() {
 ```
 
 
-Whereby a function is returned (due to Redux Thunk) from our API call with a payload of JSON data holding all the threads. Due to Redux Thunk, we can dispatch that function to our reducer below. 
+Whereby a function is returned (due to Redux Thunk) from our API call with a payload of JSON data holding all the threads. Due to Redux Thunk and our connect function in which we are passing in ``` connect(mapStateToProps, {fetchThreadds})(ThreaddsContainer);``` fetchhThreadds action creator is able to dispatch to store. 
+
+
+we can dispatch that function and action to our reducer below. 
 
 ```
     switch(action.type) {
