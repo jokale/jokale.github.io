@@ -9,7 +9,7 @@ permalink:  redux_flow_joanna_style
 In this blog post I will be explaining how I am rendering my list of threads on my React/Redux application from explaining the very start of the process, to accessing the data, to storing that data, and finally how I am getting access that data once it's stored.
 
 
-To start the process of accessing the data in order to actually render my list of threads on the page we start in my Threadds Container(thread is spelt threadds due to not being able to naming convention) as opposed to the specific Threaddlist component
+To start the process of accessing the data in order to actually render my list of threads on the page we start in my Threadds Container(thread is spelt threadds due to not being able to name it thread) as opposed to the specific Threaddlist component
 
 ```
 import React from 'react'
